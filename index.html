@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>💰 Expense Tracker</h1>
+    <button id="darkModeToggle">🌙 Dark Mode</button>
+  </header>
+
+  <section class="summary">
+    <div>Total Income: <span id="income">₹0</span></div>
+    <div>Total Expense: <span id="expense">₹0</span></div>
+    <div>Balance: <span id="balance">₹0</span></div>
+  </section>
+
+  <section class="form-section">
+    <input type="text" id="desc" placeholder="Description" required>
+    <input type="number" id="amount" placeholder="Amount" required>
+    <select id="type">
+      <option value="income">Income</option>
+      <option value="expense">Expense</option>
+    </select>
+    <select id="category">
+      <option>Salary</option>
+      <option>Food</option>
+      <option>Shopping</option>
+      <option>Other</option>
+    </select>
+    <button id="add-btn">Add</button>
+    <button id="exportCSV">📄 Export CSV</button>
+  </section>
+
+  <section>
+    <h2>📜 Transactions</h2>
+    <ul id="transaction-list"></ul>
+  </section>
+
+  <section>
+    <h2>📊 Spending Chart</h2>
+    <canvas id="spendingChart"></canvas>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

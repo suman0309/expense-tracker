@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f8;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  text-align: center;
+  background: #4CAF50;
+  color: white;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header button {
+  margin-right: 15px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+header button:hover {
+  background: #555;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px;
+  padding: 10px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-section input, .form-section select, .form-section button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-section button {
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.form-section button:hover {
+  background: #45a049;
+}
+
+#transaction-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px;
+}
+
+#transaction-list li {
+  background: white;
+  padding: 10px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+#transaction-list button {
+  background: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+canvas {
+  background: white;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 8px;
+}
+
+/* 🌙 Dark Mode */
+body.dark {
+  background: #121212;
+  color: #eee;
+}
+
+body.dark header {
+  background: #222;
+}
+
+body.dark .summary,
+body.dark .form-section,
+body.dark #transaction-list li,
+body.dark canvas {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+body.dark .form-section button {
+  background: #555;
+}
